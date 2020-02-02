@@ -19,7 +19,7 @@ public class ClienteServiceImpl implements IClienteService {
     private IClienteDao clienteDao;
 	
 	@Override
-	@Transactional(readOnly = true) // indica que solo es una consulta e lectura
+	@Transactional(readOnly = true) // indica que solo es una consulta de lectura
 	public List<Cliente> findAll() {
 
 		return (List<Cliente>) clienteDao.findAll();
